@@ -1,0 +1,150 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+/* Common CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  width: 1240px;
+  margin: auto;
+  background-color: #ebebeb;
+}
+
+/**************** Header Section ****************/
+.header-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+}
+
+.logo-area h2 {
+  font-family: "poppins", sans-serif;
+  font-size: 24px;
+  color: #3a3a3a;
+}
+
+nav.navigation-panel > ul > li {
+  display: inline;
+  margin-left: 18px;
+  list-style: none;
+}
+
+nav.navigation-panel > ul > li > a {
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #3a3a3a;
+}
+
+/**************** Banner Section ****************/
+.banner-area {
+  display: flex;
+  align-items: center;
+  height: 575px;
+}
+
+.banner-content h1 {
+  font-size: 52px;
+  color: #3a3a3a;
+  line-height: 68px;
+}
+
+.banner-content p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3a3a3a;
+  width: 75%;
+  margin-bottom: 45px;
+  margin-top: 15px;
+}
+
+.banner-content a {
+  text-decoration: none;
+  background-color: #e02c6d;
+  padding: 15px 25px;
+  border-radius: 25px;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.camera-img {
+  background-image: url(assets/abstruct/bg-camera.svg);
+  background-repeat: no-repeat;
+}
+
+/**************** Brand Logo Section ****************/
+.brand-logo {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  justify-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.137);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+  padding: 10px 0;
+}
+
+/**************** Product Area Section ****************/
+.product-area {
+  margin: 100px 0 100px 0;
+}
+
+.product-area h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #3a3a3a;
+  margin-bottom: 35px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.product-item-1 {
+  margin: 0 50px 0 50px;
+  padding: 10px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+
+.product-item-1 p {
+  width: 80%;
+  size: 14px;
+  font-family: "Inter", sans-serif;
+}
+
+.product-item-2 {
+  margin: 0 50px 0 50px;
+  padding: 10px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+
+.product-item-2 p {
+  width: 80%;
+  size: 14px;
+  font-family: "Inter", sans-serif;
+}
+
+.product-item-3 {
+  margin: 0 50px 0 50px;
+  padding: 10px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+
+.product-item-3 p {
+  width: 80%;
+  size: 14px;
+  font-family: "Inter", sans-serif;
+}
