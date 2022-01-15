@@ -74,11 +74,17 @@ nav.navigation-panel > ul > li > a {
 .banner-content a {
   text-decoration: none;
   background-color: #e02c6d;
-  padding: 15px 25px;
+  padding: 8px 25px;
   border-radius: 25px;
   color: #fff;
   font-weight: bold;
   margin-top: 20px;
+}
+
+.banner-content a:hover {
+  padding: 8px 25px;
+  background-color: #1a1a1a;
+  transition: 1s ease-in-out;
 }
 
 .camera-img {
@@ -86,6 +92,22 @@ nav.navigation-panel > ul > li > a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  animation: 1.5s ease 0s infinite beat;
+  animation-play-state: running;
+}
+
+.camera-img img {
+  animation: heartbeat 0.7s ease-in-out 0s infinite;
+  animation-play-state: running;
+}
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.92);
+  }
 }
 
 /**************** Brand Logo Section ****************/
@@ -167,6 +189,10 @@ nav.navigation-panel > ul > li > a {
   margin-top: 25px;
   margin-right: 25px;
 }
+.btn-see-more:hover {
+  color: #1a1a1a;
+  transition: 0.8s ease;
+}
 
 /**************** Blog Area ****************/
 .blog-content h2 {
@@ -209,6 +235,11 @@ nav.navigation-panel > ul > li > a {
   font-size: 14px;
 }
 
+.blog a:hover {
+  background-color: #1a1a1a;
+  transition: 1s ease-in-out;
+}
+
 /**************** Footer Area ****************/
 .footer-area {
   background-color: #0a0826;
@@ -244,9 +275,14 @@ nav.navigation-panel > ul > li > a {
   font-size: 14px;
 }
 
+.fab:hover {
+  background-color: #e02c6d;
+  transition: 1s ease;
+}
+
 /**************** Responsive Area ****************/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   body {
     width: 95%;
   }
@@ -273,7 +309,9 @@ nav.navigation-panel > ul > li > a {
   .banner-image {
     width: 100%;
   }
-
+  .banner-image {
+    padding: 25px;
+  }
   .banner-content h1 {
     text-align: center;
     font-size: 28px;
@@ -320,10 +358,47 @@ nav.navigation-panel > ul > li > a {
     justify-content: space-around;
   }
 
+  /* Blog Area */
+
   .blog-area {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     row-gap: 20px;
     margin-bottom: 45px;
+  }
+}
+
+/* Tablet responsive */
+@media only screen and (min-width: 481px) and (max-width: 992px) {
+  body {
+    width: 95%;
+  }
+  /* Banner Area */
+  .banner-area {
+    height: 370px;
+  }
+
+  .camera-img img {
+    width: 100%;
+  }
+
+  /* Brand Logo */
+  .brand-logo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Product Area */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    justify-content: space-around;
+  }
+  /* Blog Area */
+  .blog-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
   }
 }
