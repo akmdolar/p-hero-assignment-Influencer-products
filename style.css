@@ -296,7 +296,7 @@ nav.navigation-panel > ul > li > a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 35px;
-    padding: 0;
+    padding: 15px 0;
     text-align: center;
   }
 
