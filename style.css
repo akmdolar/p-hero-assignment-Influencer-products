@@ -377,6 +377,10 @@ nav.navigation-panel > ul > li > a {
     width: 95%;
   }
   /* Banner Area */
+  .banner-content h1 {
+    font-size: 25px;
+    line-height: 45px;
+  }
   .banner-area {
     height: 370px;
   }
